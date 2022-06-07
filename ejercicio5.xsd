@@ -7,20 +7,20 @@
                     <xs:complexType>
                         <xs:choice>
                             <xs:element name="ventacredito" minOccurs="0">
-                                    <xs:complexType>
-                                        <xs:sequence>
-                                            <xs:element name="fechafinpago" type="xs:date" minOccurs="0" maxOccurs="1"/>
-                                            <xs:element name="cantidad" type="xs:integer" minOccurs="1"/>
-                                        </xs:sequence>
-                                    </xs:complexType>
-                                </xs:element>
-                                <xs:element name="ventainmediata" minOccurs="0">
-                                    <xs:complexType>
-                                        <xs:sequence>
-                                            <xs:element name="divisa" type="xs:string" minOccurs="1"/>
-                                            <xs:element name="cantidad" type="xs:integer" minOccurs="1"/>
-                                        </xs:sequence>
-                                    </xs:complexType>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="fechafinpago" type="xs:date" minOccurs="0" maxOccurs="1"/>
+                                        <xs:element name="cantidad" type="xs:integer" minOccurs="1"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ventainmediata" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="divisa" type="xs:string" minOccurs="1"/>
+                                        <xs:element name="cantidad" type="xs:integer" minOccurs="1"/>
+                                    </xs:sequence>
+                                </xs:complexType>
                              </xs:element>
                         </xs:choice>
                     </xs:complexType>
